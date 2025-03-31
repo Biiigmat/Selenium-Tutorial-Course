@@ -11,8 +11,8 @@ chrome_options = Options()
 # chrome_options.add_argument('--incognito')
 chrome_options.add_argument('--headless')
 # service = Service(ChromeDriverManager().install())
-service = Service(ChromeDriverManager().install()) # with chrome option
-driver = webdriver.Chrome(service=service, options=chrome_options)
+service = Service(ChromeDriverManager().install())
+driver = webdriver.Chrome(service=service, options=chrome_options) # with chrome option
 
 # Browser action 1 > Open Web
 driver.get('https://google.com')
