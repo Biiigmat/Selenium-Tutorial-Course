@@ -24,7 +24,6 @@ driver.find_element(By.XPATH, '//input[@type="submit"]').click()
 
 WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'w3-container')))
 
-# پیدا کردن و استخراج محتوای div
 div_result = driver.find_element(By.CSS_SELECTOR, '.w3-container.w3-large.w3-border')
 print(div_result.text)
 sleep(5)
